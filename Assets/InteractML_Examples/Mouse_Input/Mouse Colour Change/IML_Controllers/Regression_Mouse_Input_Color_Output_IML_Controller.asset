@@ -36,10 +36,7 @@ MonoBehaviour:
       _node: {fileID: -9158786966055275176}
       _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: SetG
-        node: {fileID: 4113153438833120164}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -54,50 +51,6 @@ MonoBehaviour:
   InputConnected: 1
   m_UserInput: 0
   float_switch: 1
---- !u!114 &-7199848780986165317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43fc602e16b045142bc5c26d2ce145a6, type: 3}
-  m_Name: Capsule (GameObject)
-  m_EditorClassIdentifier: 
-  id: 3227f79f-5405-40b0-9e19-3745e61dd291
-  graph: {fileID: 11400000}
-  position: {x: -520, y: -456}
-  ports:
-    keys:
-    - GameObjectDataOut
-    values:
-    - _fieldName: GameObjectDataOut
-      _node: {fileID: -7199848780986165317}
-      _typeQualifiedName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: GameObjectDataIn
-        node: {fileID: 5092278411087661957}
-        reroutePoints: []
-      - fieldName: GameObjectDataIn
-        node: {fileID: -6267761647402259264}
-        reroutePoints:
-        - {x: -213.46216, y: -38.272976}
-        - {x: -112, y: 1024}
-        - {x: 400, y: 1136}
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  DevMode: 0
-  IsInitialized: 1
-  GameObjectDataOut: {fileID: 0}
-  GameObjMissing: 0
-  state: 0
-  GOHashCode: 27006
-  CreatedDuringPlaymode: 0
 --- !u!114 &-6267761647402259264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,9 +105,9 @@ MonoBehaviour:
   z_switch: 1
   m_PositionExtracted:
     m_Values:
-    - -16.6
-    - 2.07
+    - 19.1
     - 0
+    - -14.8
   ReceivingData: 0
 --- !u!114 &-4567322012494782378
 MonoBehaviour:
@@ -266,10 +219,7 @@ MonoBehaviour:
       _node: {fileID: -1047497902821097423}
       _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: SetR
-        node: {fileID: 4113153438833120164}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -309,7 +259,7 @@ MonoBehaviour:
   - {fileID: -1047497902821097423}
   - {fileID: -9158786966055275176}
   - {fileID: 6287656070124255742}
-  - {fileID: 4113153438833120164}
+  - {fileID: 0}
   - {fileID: 5196100462732241058}
   SceneComponent: {fileID: 0}
 --- !u!114 &1841612058189453493
@@ -386,106 +336,6 @@ MonoBehaviour:
 
 
 '
---- !u!114 &4113153438833120164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e955aaefcc0cc3438b670a24cf66a3a, type: 3}
-  m_Name: colorChangerRGB (Script)
-  m_EditorClassIdentifier: 
-  id: 53949355-7c79-485c-9447-e419d17d0dd8
-  graph: {fileID: 11400000}
-  position: {x: 2072, y: 40}
-  ports:
-    keys:
-    - SetR
-    - SetG
-    - SetB
-    values:
-    - _fieldName: SetR
-      _node: {fileID: 4113153438833120164}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: m_Out
-        node: {fileID: -1047497902821097423}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: SetG
-      _node: {fileID: 4113153438833120164}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: m_Out
-        node: {fileID: -9158786966055275176}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: SetB
-      _node: {fileID: 4113153438833120164}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: m_Out
-        node: {fileID: 6287656070124255742}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-  DevMode: 0
-  IsInitialized: 1
-  m_ScriptInternal: {fileID: 0}
-  ScriptHashCode: 27040
-  m_PortsPerFieldInfo:
-    m_keys:
-    - _fieldName: SetR
-      _node: {fileID: 4113153438833120164}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: m_Out
-        node: {fileID: -1047497902821097423}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: SetG
-      _node: {fileID: 4113153438833120164}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: m_Out
-        node: {fileID: -9158786966055275176}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: SetB
-      _node: {fileID: 4113153438833120164}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: m_Out
-        node: {fileID: 6287656070124255742}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-  CreatedDuringPlaymode: 0
 --- !u!114 &5092278411087661957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -539,9 +389,9 @@ MonoBehaviour:
   z_switch: 1
   m_PositionExtracted:
     m_Values:
-    - -16.6
-    - 2.07
+    - 19.1
     - 0
+    - -14.8
   ReceivingData: 0
 --- !u!114 &5196100462732241058
 MonoBehaviour:
@@ -630,10 +480,7 @@ MonoBehaviour:
       _node: {fileID: 6287656070124255742}
       _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: SetB
-        node: {fileID: 4113153438833120164}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0

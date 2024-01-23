@@ -1,43 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8914584667776746422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43fc602e16b045142bc5c26d2ce145a6, type: 3}
-  m_Name: Capsule (GameObject)
-  m_EditorClassIdentifier: 
-  id: a746dcaf-a7aa-461b-9f71-f1af5ad31538
-  graph: {fileID: 11400000}
-  position: {x: -264, y: -136}
-  ports:
-    keys:
-    - GameObjectDataOut
-    values:
-    - _fieldName: GameObjectDataOut
-      _node: {fileID: -8914584667776746422}
-      _typeQualifiedName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: GameObjectDataIn
-        node: {fileID: -7194312582767240663}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  DevMode: 0
-  IsInitialized: 1
-  GameObjectDataOut: {fileID: 0}
-  GameObjMissing: 0
-  state: 1
-  GOHashCode: 17160
-  CreatedDuringPlaymode: 0
 --- !u!114 &-7194312582767240663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,17 +382,5 @@ MonoBehaviour:
   m_ScriptInternal: {fileID: 0}
   ScriptHashCode: 17202
   m_PortsPerFieldInfo:
-    m_keys:
-    - _fieldName: SetAbsoluteColour
-      _node: {fileID: 7664542125311193265}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: m_Out
-        node: {fileID: 6125476143715219942}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
+    m_keys: []
   CreatedDuringPlaymode: 0
